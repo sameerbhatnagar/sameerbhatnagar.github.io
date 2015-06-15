@@ -11,27 +11,11 @@ comments: yes
 
 ***
 
-> Below is my ever increasing collection of useful web resources (in no particular order) as well as my academic mentors. I am grateful for their efforts. Their teachings, discussions, projects, articles, blog posts, tweets, GitHub repos, `R` packages and software have a tremendous impact on my academic endeavors. 
+> Below is my ever increasing collection of useful web resources (in no particular order). _If I see further, it is because I stood on the shoulders of giants_
+##Special thanks to [Sahir Bhatnagar](http://sahirbhatnagar.com), without whom I would be still working in Excel and Powerpoint.
 
 ***
 
-## Statistics
-
-* [How to bootstrap correlated data](http://biostat.mc.vanderbilt.edu/wiki/Main/HowToBootstrapCorrelatedData)
-
-
-
-## Mentors
-
-* [Celia Greenwood](http://www.mcgill.ca/statisticalgenetics/home-page)
-* [Mathieu Blanchette](http://en.wikipedia.org/wiki/Mathieu_Blanchette_%28computational_biologist%29)
-* [Devon Lin](http://www.mast.queensu.ca/~cdlin/)
-* [Paul Peng](http://www.mast.queensu.ca/people/profiles/peng.php)
-* [James Hanley](http://www.medicine.mcgill.ca/epidemiology/hanley/)
-* [Olli Saarela](http://individual.utoronto.ca/osaarela/)
-* [Erica Moodie](http://www.medicine.mcgill.ca/epidemiology/moodie/)
-* [Andrea Benedetti](https://www.researchgate.net/profile/Andrea_Benedetti)
-* [David Stephens](http://www.math.mcgill.ca/~dstephens/)
 
 
 ## R Packages for visualisation
