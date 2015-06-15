@@ -1,0 +1,44 @@
+# Dependencies
+markdown:         kramdown
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "strikethrough", "superscript", "with_toc_data"]
+
+#highlighter:      pygments
+
+excerpt_separator: <!--more-->  # you can specify your own separator
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            
+tagline:          'Sahir Bhatnagar'
+description:	  '<a href="https://scholar.google.ca/citations?user=9XJum2AAAAAJ&hl=en" target="_blank">Google Scholar</a>, <a href="http://www.researchgate.net/profile/Sahir_Bhatnagar" target="_blank">ResearchGate</a>, <a href="https://twitter.com/syfi_24" target="_blank">@syfi_24</a>, <a href="https://github.com/sahirbhatnagar">Github</a>, <a href="mailto:sahir.bhatnagar@gmail.com">email</a>'
+#description:      'PhD student in <a href="http://www.mcgill.ca/epi-biostat-occh/" target="_blank">Biostatistics</a> at <a href="http://mcgill.ca" target="_blank">McGill Univeristy</a> under the #supervision of <a href="http://www.mcgill.ca/statisticalgenetics/" target="_blank">Celia Greenwood</a> and <a href="http://en.wikipedia.org/wiki/Mathieu_Blanchette_%28computational_biologist%29" #target="_blank">Mathieu Blanchette</a>.'
+url:              http://sahirbhatnagar.com
+baseurl:          '/'
+paginate:         5
+
+author:
+  name: 'Sahir Bhatnagar'
+  email: sahir.bhatnagar@gmail.com
+  twitter: syfi_24
+  github: sahirbhatnagar
+  disqus_shortname: sahirbhatnagar
+  bio: PhD student
+  google_scholar: https://scholar.google.ca/citations?user=9XJum2AAAAAJ&hl=en
+  researchgate: http://www.researchgate.net/profile/Sahir_Bhatnagar
+  mendeley: http://www.mendeley.com/profiles/sahir-bhatnagar/
+  figshare: http://figshare.com/authors/Sahir_Bhatnagar/698763
+  slideshare: http://www.slideshare.net/sahirbhatnagar 
+
+
+
+# Custom vars
+version:          2.1.0
+
+#github:
+#  repo:           https://github.com/sahirbhatnagar/
+
+

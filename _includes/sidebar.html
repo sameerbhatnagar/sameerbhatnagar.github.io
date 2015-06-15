@@ -1,0 +1,123 @@
+<div class="sidebar">
+	<div class="container sidebar-sticky">
+<!--<div class="container">-->
+    <div class="sidebar-about">
+      <h1>
+        <a href="{{ site.baseurl }}">
+          {{ site.title }}
+        </a>
+      </h1>
+      <!--<p class="lead">{{ site.description }}</p>-->
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
+
+      {% comment %}
+        The code below dynamically generates a sidebar nav of pages with
+        `layout: page` in the front-matter. See readme for usage.
+      {% endcomment %}
+
+      {% assign pages_list = site.pages %}
+      {% for node in pages_list %}
+        {% if node.title != null %}
+          {% if node.layout == "page" %}
+            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+      <!--<a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
+      <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
+      <span class="sidebar-nav-item">Currently v{{ site.version }}</span>-->
+    </nav>
+
+
+    {% if site.author.google_scholar %}
+    <a href="{{ site.author.google_scholar }}">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-square-o fa-stack-2x"></i>
+        <i class="ai ai-google-scholar fa-stack-1x"></i>
+      </span>
+    </a>
+    {% endif %}
+
+    {% if site.author.researchgate %}
+    <a href="{{ site.author.researchgate }}">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-square-o fa-stack-2x"></i>
+        <i class="ai ai-researchgate fa-stack-1x"></i>
+      </span>
+    </a>
+    {% endif %}
+
+    {% if site.author.slideshare %}
+    <a href="{{ site.author.slideshare }}">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-square-o fa-stack-2x"></i>
+        <i class="fa fa-desktop fa-stack-1x"></i>
+      </span>
+    </a>
+    {% endif %}
+
+    {% if site.author.figshare %}
+    <a href="{{ site.author.figshare }}">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-square-o fa-stack-2x"></i>
+        <i class="ai ai-figshare fa-stack-1x"></i>
+      </span>
+    </a>
+    {% endif %}
+
+    <!--{% if site.author.mendeley %}
+    <a href="{{ site.author.mendeley }}">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-square-o fa-stack-2x"></i>
+        <i class="ai ai-mendeley fa-stack-1x"></i>
+      </span>
+    </a>
+    {% endif %}-->
+
+    {% if site.author.github %}
+      <a href="https://github.com/{{ site.author.github }}">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-square-o fa-stack-2x"></i>
+          <i class="fa fa-github-alt fa-stack-1x"></i>
+        </span>
+      </a>
+    {% endif %}
+
+    {% if site.author.twitter %}
+      <a href="https://twitter.com/{{ site.author.twitter }}">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-square-o fa-stack-2x"></i>
+          <i class="fa fa-twitter fa-stack-1x"></i>
+        </span>
+      </a>
+    {% endif %}
+
+<!--{% if site.author.email %}
+      <a href="mailto:{{ site.author.email }}">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-square-o fa-stack-2x"></i>
+          <i class="fa fa-envelope fa-stack-1x"></i>
+        </span>
+      </a>
+    {% endif %}-->
+
+    </div>
+	&nbsp;
+    <p>&copy; Sahir Bhatnagar. Powered by <a href="http://jekyllrb.com/">jekyll</a>, <a href="http://getpoole.com/">poole</a>, 
+          <a href="http://yihui.name/knitr/">knitr</a>,
+          <a href="http://johnmacfarlane.net/pandoc/">pandoc</a>, and <a href="https://github.com/sahirbhatnagar/sahirbhatnagar.github.io">GitHub</a>.</p>
+	</div>
+</div>
+
+<!--<div class="footer">
+        <hr>
+        <p>&copy; Hadley Wickham. Powered by <a href="http://jekyllrb.com/">jekyll</a>,
+          <a href="http://yihui.name/knitr/">knitr</a>, and
+          <a href="http://johnmacfarlane.net/pandoc/">pandoc</a>. Source
+          available on <a href="https://github.com/hadley/adv-r/">github</a>.
+        </p>
+      </div>
+-->
