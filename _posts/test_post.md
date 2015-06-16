@@ -1,8 +1,11 @@
 ---
-title: "Test Post"
-author: "Sameer Bhatnagar"
+title: "test Post"
+author: "sameer"
 date: "June 15, 2015"
 output: html_document
+layout: post
+tags: [R, Jekyll]
+comments: yes
 ---
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
