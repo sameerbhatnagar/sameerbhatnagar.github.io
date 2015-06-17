@@ -31,14 +31,13 @@ Next, the idea of conditional entropy is introduced as a means of mining for syn
 
 An entropy maximum of 1 means that the random variable X is hard to predict, while an entropy of 0 means that the random variable is certain (and hence very easy to predict). The random variable $$X_w$$ defined as 1 if the word $$w$$ is in the document, and 0 if it is not.
 
-Conditional entropy has the same form, except the probabilities are conditioned on knowledge of one of the two words. 
-\\[ H(X_{w_1}|X_{w_2}) = \sum_{u\in(0,1)}\lbrace p(X_{w_2}=u)\cdot H(X_{w_1}|X_{w_2}=u)\rbrace \\]
-\\[ = \sum_{u\in(0,1)}\lbrace p(X_{w_2}=u)\cdot [\sum_{v\in(0,1)} -p(X_{w_1}=v|X_{w_2=u})\cdot\log_2[p(X_{w_1}=v|X_{w_2=u})]] \rbrace \\]
+Conditional entropy has the same form, except the probabilities are conditioned on knowledge of one of the two words: 
+\\[H(X_{w_1}|X_{w_2}) = \sum_{u\in(0,1)}\lbrace p(X_{w_2}=u)\cdot H(X_{w_1}|X_{w_2}=u)\rbrace\\]
+\\[= \sum_{u\in(0,1)}\lbrace p(X_{w_2}=u)\cdot [\sum_{v\in(0,1)} -p(X_{w_1}=v|X_{w_2=u})\cdot\log_2[p(X_{w_1}=v|X_{w_2=u})]]\rbrace\\]
 
 If a pairs of words have low conditional entropy, the knowledge of one increases our ability to predict the other, and hence the words may have a semantic relation.  
 
 The issue brought up is that conditional entropies cannot be compared unless we are looking at the same root word, i.e.
-
 \\( H(X_{w_1}|X_{w_2}) \\)
 and 
 \\( H(X_{w_1}|X_{w_3}) \\)
