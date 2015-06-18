@@ -32,28 +32,28 @@ Next, the idea of conditional entropy is introduced as a means of mining for syn
 An entropy maximum of 1 means that the random variable X is hard to predict, while an entropy of 0 means that the random variable is certain (and hence very easy to predict). The random variable $$X_w$$ defined as 1 if the word $$w$$ is in the document, and 0 if it is not.
 
 Conditional entropy has the same form, except the probabilities are conditioned on knowledge of one of the two words: 
-\\[H(X_{w_1}|X_{w_2}) = \sum_{u\in(0,1)}\lbrace p(X_{w_2}=u)\cdot H(X_{w_1}|X_{w_2}=u)\rbrace\\]
-\\[= \sum_{u\in(0,1)}\lbrace p(X_{w_2}=u)\cdot [\sum_{v\in(0,1)} -p(X_{w_1}=v|X_{w_2=u})\cdot\log_2[p(X_{w_1}=v|X_{w_2=u})]]\rbrace\\]
+\\[H(X\_{w_1}|X\_{w_2}) = \sum\_{u\in(0,1)}\lbrace p(X\_{w\_2}=u)\cdot H(X\_{w\_1}|X\_{w\_2}=u)\rbrace\\]
+\\[= \sum\_{u\in(0,1)}\lbrace p(X\_{w\_2}=u)\cdot [\sum\_{v\in(0,1)} -p(X\_{w\_1}=v|X\_{w\_2=u})\cdot\log\_2[p(X\_{w\_1}=v|X\_{w\_2=u})]]\rbrace\\]
 
 If a pairs of words have low conditional entropy, the knowledge of one increases our ability to predict the other, and hence the words may have a semantic relation.  
 
 The issue brought up is that conditional entropies cannot be compared unless we are looking at the same root word, i.e.
-\\( H(X_{w_1}|X_{w_2}) \\)
+\\( H(X\_{w\_1}|X\_{w\_2}) \\)
 and 
-\\( H(X_{w_1}|X_{w_3}) \\)
+\\( H(X\_{w\_1}|X\_{w\_3}) \\)
 are comparable; 
-\\( H(X_{w_1}|X_{w_2}) \\)
+\\( H(X\_{w\_1}|X\_{w\_2}) \\)
 and 
-\\( H(X_{w_2}|X_{w_3}) \\)
+\\( H(X\_{w\_2}|X\_{w\_3}) \\)
 are not.
 
 This is where the idea of Mutual Information is introduced, which measures the reduction of entropy of the root word with knowledge of some second term. 
-\\[I(X_{w_1};X_{w_2})= H(X_{w_1}) - H(X_{w_1}|X_{w_2})\\]
+\\[I(X\_{w\_1};X\_{w\_2})= H(X\_{w\_1}) - H(X\_{w\_1}|X\_{w\_2})\\]
 
 Mutual Information (MI) is symmetric, and can be compared across different term pairs to determine stronger semantic/syntagmatic relations. MI can also be written in term of KL-divergence:
 
-\\[ I(X_{w_1};X_{w_2}) = \sum_{u\in(0,1)}\sum_{v\in(0,1)} p(X_{w_1}=v,X_{w_2}=u) \cdot
-\log_2 \frac{p(X_{w_1}=v,X_{w_2}=u)}{p(X_{w_1}=v)p(X_{w_2}=u)}
+\\[ I(X\_{w\_1};X\_{w\_2}) = \sum\_{u\in(0,1)}\sum\_{v\in(0,1)} p(X\_{w\_1}=v,X\_{w\_2}=u) \cdot
+\log\_2 \frac{p(X\_{w\_1}=v,X\_{w\_2}=u)}{p(X\_{w\_1}=v)p(X\_{w\_2}=u)}
 \\]
 
 The ratio in this expression of MI is of the _observed joint distribution_ of the two words, to the _expected distribution_ of the two words _if they were independant_.
