@@ -1,11 +1,11 @@
 ---
-title: "Text Mining MOOC - Week 1"
+title: "Mining Word Asociations"
 author: "sameer"
 date: "June 16, 2015"
 output: html_document
 layout: post
 tags: [Text Mining]
-permalink: textminingweek1
+permalink: miningwordassociations
 comments: yes
 ---
 
@@ -14,9 +14,11 @@ I am taking the [Text Mining and Analytics MOOC](https://www.coursera.org/course
 - Paradigmatic relations are between words which are of the same class (i.e. cat, dog). These can be found by finding those words which have the most similar contexts (words on the right, words on the left).
 
 - Syntagmatic relations are between words whose meaning can be related to one another (i.e. cat, eats). These relations are mined by searching for co-occuring elements.  
+<!----more---->
 
 The most technical part of this discussion arises when trying to measure the similarity of two documents using simply Term Frequency to represent the components of a document vector $$d = (x_1,x_2,\dots,x_n)$$, where _n_ reprsents the size of the vocabulary, and $$x_i$$ are the normalized counts of term _i_ in that document. The main issue if we define the similarity between two documents as simply the scalar product between two document vectors is that
-there is a bias towards matching more words that occur more frequently, instead of matching more distinct terms (think how much students use the word _force_ in their rationales, often in very different ways). Hence two concepts are introduced:
+there is a bias towards matching more words that occur more frequently, instead of matching more distinct terms. Hence two concepts are introduced:
+<!----more---->
 
 - Sublinear Term Frequency transformations  
   + \\(TF = 0\\) or \\(TF=1\\) (only record presence of word, but no change if word appears many times)
