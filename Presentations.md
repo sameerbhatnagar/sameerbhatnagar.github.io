@@ -14,5 +14,5 @@ comments: yes
 ### 2015
 
 * **International Conference on Educational Data Mining** _Madrid, Spain_  
-[DALITE: An Analysis of Peer Written and Peer Reviewed Rationales](http://www.slideshare.net/sameerbhatnagarpolymtl/edm2015presentation-49689021)
+[DALITE: An Analysis of Peer Written and Peer Reviewed Rationales](http://www.slideshare.net/sameerbhatnagarpolymtl/edm2015presentation-49799426)
 
