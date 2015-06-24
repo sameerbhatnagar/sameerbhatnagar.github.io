@@ -12,7 +12,7 @@ comments: yes
 ***
 
 * Below is my ever increasing collection of useful web resources (in no particular order).   * _If I see further, it is because I stood on the shoulders of giants_  
-## Special thanks to [Sahir Bhatnagar](http://sahirbhatnagar.com), without whom I would be still working in Excel and Powerpoint.
+* Special thanks to [Sahir Bhatnagar](http://sahirbhatnagar.com), without whom I would be lost in some stackexchange thread right now
 
 ***
 
