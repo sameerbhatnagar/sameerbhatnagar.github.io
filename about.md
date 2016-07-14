@@ -14,7 +14,7 @@ I am a PhD student in the department of <a href="http://www.polymtl.ca/gigl/" ta
 </p>
 
 <p class="message">
-I have been a physics teacher at <a href="http://www.dawsoncollege.qc.ca/" target="_blank">Dawson College</a> since 2009. I joined the SALTISE <a href="https://dianaramsey1981.wordpress.com/chris-whittaker/" target="_blank">Physics education research group</a>, wherein I worked on the development and deployment of DALITE, a web-based learning environment centered on delivering peer instruction on-line.
+I have been a physics teacher at <a href="http://www.dawsoncollege.qc.ca/" target="_blank">Dawson College</a> since 2009. I joined the SALTISE <a href="http://www.saltise.ca/" target="_blank">Physics education research group</a>, wherein I worked on the development and deployment of <a href="https://github.com/open-craft/dalite-ng" target="_blank">DALITE</a>, a web-based learning environment centered on delivering peer instruction on-line.
 </p>
 
 <p class="message">
