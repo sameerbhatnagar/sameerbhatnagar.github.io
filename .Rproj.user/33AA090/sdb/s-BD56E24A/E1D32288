@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"Intro to Dalite\"\nauthor: \"Sameer Bhatnagar\"\ndate: \"August 31, 2016\"\noutput: html_document\nlayout: post\ntags: [OpenEdx, DALITE]\npermalink: daliteDALC\ncomments: yes\n---\n\n```{r setup, include=FALSE}\nknitr::opts_chunk$set(echo = TRUE)\n```\n\n_Under Construction_\n\nToday I gave a talk at the Dawson Active Learning Community meetup, where the theme was methods to get students to read their materials before class. I introduced our Peer Instruction tool, DALITE.\n<!--more-->\nFor those who were there, here is the link to the [Google Doc](https://docs.google.com/document/d/1m0VFDhGpk8j_bteoNFXwZEoehfPZX1NMv44COgwito8/edit?usp=sharing) with instructions on how to use the tool as an LTI resource in an Open EdX instance.",
+    "created" : 1472697483283.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1618572891",
+    "id" : "E1D32288",
+    "lastKnownWriteTime" : 1472698072,
+    "last_content_update" : 1472698072376,
+    "path" : "~/sameerbhatnagar.github.io/_source/2016-08-31-Intro to DALITE.Rmd",
+    "project_path" : "_source/2016-08-31-Intro to DALITE.Rmd",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

@@ -1,0 +1,20 @@
+---
+title: "Intro to Dalite"
+author: "Sameer Bhatnagar"
+date: "August 31, 2016"
+output: html_document
+layout: post
+tags: [OpenEdx, DALITE]
+permalink: daliteDALC
+comments: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+_Under Construction_
+
+Today I gave a talk at the Dawson Active Learning Community meetup, where the theme was methods to get students to read their materials before class. I introduced our Peer Instruction tool, DALITE.
+<!--more-->
+For those who were there, here is the link to the [Google Doc](https://docs.google.com/document/d/1m0VFDhGpk8j_bteoNFXwZEoehfPZX1NMv44COgwito8/edit?usp=sharing) with instructions on how to use the tool as an LTI resource in an Open EdX instance.
